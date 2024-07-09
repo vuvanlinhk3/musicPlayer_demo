@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
+</head>
+<body>
+<!-- part main player -->
+<div class="main_player">
+    <!-- header -->
+    <div class="header">
+        <!-- part header - SONG TITLE -->
+        <div class="song_title">
+            <h2 id="nowplaying">Not Playing</h2>
+            <h1 id="name-playlist">PlayList</h1> 
+        </div>
+        <!-- CD -->
+        <div class="cd">
+            <div class="cd_img"
+            style="background-image: url('./list_ImgMusic/Loi-bai-hat-Thuong-Em-Thuong-Lam-Chi-Dan.jpg');">            
+            </div>
+        </div>
+        <!-- Control -->
+        <div class="control">
+            <div class="icon-buttom icon-repeat">
+                <i class="ti-back-right"></i>
+            </div>
+            <div class="icon-buttom icon-back">
+                <i class="ti-control-skip-backward"></i>
+            </div>
+            <div class="icon-buttom icon-play">
+                <i class="fa-solid fa-circle-play "></i>
+                <i class="fa-sharp fa-solid fa-circle-pause "></i>
+            </div>
+            <div class="icon-buttom icon-next">
+                <i class="ti-control-skip-forward"></i>
+            </div>
+            <div class="icon-buttom icon-random">
+                <i class="ti-control-shuffle"></i> 
+            </div>
+        </div>
+        <!-- range bar -->
+        <input id="progress" class="progress" type="range" name="" value="0" step="1" min="0" max="100">
+    
+        <audio id="audio" src=""></audio>
+    </div>
+    <!-- Play List -->
+    <div class="play-list">
+        <!-- song -->
+        <div class="song active">
+            <div class="imgsong"
+            style="background-image: url('./list_ImgMusic/Loi-bai-hat-Thuong-Em-Thuong-Lam-Chi-Dan.jpg');">
+            </div>
+            <div class="bodysong">
+            <h3 class="name-music">Tên bài hát</h3>
+            <p class="author">tên cả sỷ / nhóm nhạc</p>
+            </div>
+            <div class="option">
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

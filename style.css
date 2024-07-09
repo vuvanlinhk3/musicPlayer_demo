@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    background-color: aliceblue;
+    top: 0;
+    border: 1px solid rgba(187, 178, 178,0.5);
+    z-index: 10;
+}
+/* song title */
+.song_title{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+.song_title h1 {
+    font-size: 28px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.song_title h2 {
+    color: red;
+    font-size: 14px;
+    padding: 16px 0 14px 0;
+}
+/* CD */
+.cd{
+    /* display: flex; */
+    width: 200px;
+    margin: auto;
+}
+.cd .cd_img {
+width: 100%;
+padding-top:100%;
+border-radius: 50%;
+background-color: black;
+background-size: cover;
+margin: auto;
+}
+
+/* .cd .cd-rotate{
+    animation: rotatecd 5s linear infinite;
+}
+@keyframes rotatecd {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
+
+/* control */
+.control {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;    
+    transition: all 0.5s ease;
+}
+  
+
+.icon-play {
+    position: relative;
+  }
+  
+  .icon-play i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .icon-play .fa-circle-pause {
+    opacity: 0;
+    /* transform: rotate(-90deg); */
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  
+  .icon-play.active .fa-circle-pause {
+    opacity: 1;
+    transform: translate(-50%, -50%) ;
+  }  
+  .icon-play .fa-circle-play {
+    opacity: 1;
+    /* transform: rotate(-90deg); */
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  
+  .icon-play.active .fa-circle-play {
+    opacity: 0;
+    /* transform: translate(-50%, -50%) ; */
+  }  
+
+
+
+.icon-back,.icon-repeat,.icon-random,.icon-next{
+    margin: 20px;
+}
+.icon-buttom >i{
+    font-size: 20px;
+    font-weight: 900;
+}
+.icon-play>i{
+    font-size: 50px;
+    color: brown;
+}
+.icon-play>i:active{
+    color: #fd0800;
+}
+/* 
+test
+*/
+
+.icon-play {
+    /* your other styles here */
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .icon-play:hover {
+    /* your hover styles here */
+    transform: scale(1.1);
+  }
+  
+  .icon-play:active {
+    /* your active styles here */
+    transform: scale(0.9);
+  }
+
+
+
+/* .icon-play>.fa-circle-pause {
+    display: none;
+} */
+.playing~.ti-control-play{
+    display: block;
+}
+.icon-buttom:hover{
+    color: rgb(223, 211, 42);
+}
+.open{
+    color:red;
+}
+
+/* range */
+.progress {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 8px;
+    background-color: #ddd;
+    outline: none;
+}
+  
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 8px;
+    background-color: #fd0800;
+    cursor: pointer;
+}
+
+/* play list */
+.play-list{
+    margin-top: 390px;
+    padding: 12px;
+}
+.play-list .song{
+    width: 100%;
+    height: 80px;
+    background-color: #cfc7c7;
+    border-radius: 10px;
+    margin: 20px 20px 0 0;
+    box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.1s ease-in-out;
+    z-index: 0;
+}
+.play-list .active {
+    background-color: rgba(85, 134, 124, 0.5);
+    color: #b3537b;
+}
+.play-list .song:hover{
+    transform: scale(1)
+}
+.play-list .song:active {
+    background-color: #c28a88;
+    box-shadow: inset;
+    transform: scale(0.97)
+}
+.imgsong{
+    width: 50px;
+    height: 50px;
+    background-color: blanchedalmond;
+    background-size: cover;
+    border-radius: 50%;
+    float: left;
+    margin: 15px;
+}
+.bodysong{
+    float: left;
+    width: 50%;
+    padding: 10px 20px;
+}
+.bodysong h3 {
+    font-size: 16px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bodysong p {
+    font-style: italic;
+    font-size: 15px;
+}
+.option{
+    float: right;
+    margin: 30px 20px 0 0;
+}
+
+
